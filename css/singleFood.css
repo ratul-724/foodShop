@@ -15,7 +15,6 @@
     padding: 0px 80px;
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 1;
 }
 .logo{
     font-size: 28px;
@@ -25,25 +24,88 @@
     text-decoration: none;
     color: black;
 }
-#navBar ul{
+.logo a:hover{
+    text-decoration: none;
+    color: black;
+}
+#navBar .ul{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#navBar ul li{
+#navBar .ul .li{
     list-style: none;
     padding: 10px 20px;
-    margin-top: 18px;   
+    margin-top: 18px;
 }
-#navBar ul li a{
+#navBar .ul .li .hideItems{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 18px;
+}
+#navBar .ul .li a{
     text-decoration: none;
     color: black;
     font-weight: 400;
     transition: 0.3s ease;
 }
-#navBar li a:hover{
+#navBar .li a:hover{
     color: green;
     /* border-bottom: 2px solid green; */
+}
+#navBar .rotate:hover .dropdownImg{
+    transform: rotate(180deg);
+    transition:  0.3s ease;
+}
+
+/* Basic styling for nav items */
+.ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.li {
+    position: relative;
+}
+
+.li > a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown menu styling */
+.dropdownShopName {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    background: #E3E6F3;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 125px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdownShopName li a {
+    color: #333;
+    padding: 10px 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdownShopName li a:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+/* Show dropdown on hover */
+.li:hover .dropdownShopName {
+    display: block;
 }
 /* header section end  */
 /* singleFood Start  */

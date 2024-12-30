@@ -25,6 +25,10 @@
     text-decoration: none;
     color: black;
 }
+.logo a:hover{
+    text-decoration: none;
+    color: black;
+}
 #navBar .ul{
     display: flex;
     align-items: center;
@@ -33,7 +37,12 @@
 #navBar .ul .li{
     list-style: none;
     padding: 10px 20px;
-    margin-top: 18px;   
+    margin-top: 18px;
+}
+#navBar .ul .li .hideItems{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 18px;
 }
 #navBar .ul .li a{
     text-decoration: none;
@@ -99,10 +108,6 @@
 .li:hover .dropdownShopName {
     display: block;
 }
-
-
-
-
 /* header section end  */
 
 /* hero section start */
@@ -269,8 +274,6 @@ footer{
 }
 /* fotter section end */
 
-
-
 /* user page css start here  */
 #loginAndRegister{
     width: 100%;
@@ -290,4 +293,3 @@ footer{
 .hide{
     display: none;
 }
-

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrapCss/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>FOOD-SHOP</title>
 </head>
 <body>
@@ -13,12 +14,12 @@
         <div class="logo"><a href="index.html">Food <span class="text-success">Shop</span></a></div>
 
         <div id="navBar" >
-            <ul class="ul">
+            <ul class="ul" id="navBarUl">
                 <li class="li"><a href="index.html">Home</a></li class="li">
                 <li class="li"><a href="foods.html">Foods</a></li>
 
                 <li class="li rotate">
-                    <a href="#">Foods Shops <img class="dropdownImg" src="img/social/dropdown.png" alt="" width="15px" height="15px"></a>
+                    <a href="#">Foods Shops <img class="dropdownImg" src="img/icon/dropdown.png" alt="" width="15px" height="15px"></a>
                     <ul class="dropdownShopName">
                         <li class="dropdownShopNameListItem"><a href="foods.html">Tasty-Treat</a></li>
                         <li class="dropdownShopNameListItem"><a href="foods.html">Kacchi-Dine</a></li>
@@ -30,9 +31,15 @@
 
                 <li class="li"><a href="about.html">About</a></li>
                 <li class="li"><a href="contact.html">Contact</a></li>
-                <li class="li"><a href="cart.html"><img src="img/cart.png" alt="AddToCart" width="30px"></a></li>
-                <li class="li"><a href="user.html"><img src="img/user.png" alt="AddToCart" width="30px"></a></li>
+                <div class="icon d-flex">
+                    <li class="li "><a href="cart.html"><img src="img/icon/cart.png" alt="AddToCart" width="30px"></a></li>
+                <li class="li "><a href="user.html"><img src="img/icon/user.png" alt="login" width="30px"></a></li>
+                </div>
             </ul>
+            <!-- menu icon -->
+           <div id="menuBar" class="d-md-none">
+            <img  src="img/icon/menu.png" alt="menu" style="cursor: pointer; width:30px;">
+           </div>
         </div>
     </section>
 <!-- header end -->
@@ -46,7 +53,7 @@
             <button class="shopBtn">Shop Now</button>
         </div>
         <div class="heroBanner">
-            <img src="img/heroImg.png" alt="heroFood">
+            <img class="heroImg" src="img/heroImg.png" alt="heroFood">
         </div>
     </section>
 <!-- hero section end  -->
