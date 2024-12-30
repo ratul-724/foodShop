@@ -14,7 +14,7 @@
   <div class="logo"><a href="index.html">Food <span class="text-success">Shop</span></a></div>
 
   <div id="navBar" >
-      <ul class="ul">
+      <ul class="ul" id="navBarUl">
           <li class="li"><a href="index.html">Home</a></li class="li">
           <li class="li"><a href="foods.html">Foods</a></li>
 
@@ -37,7 +37,9 @@
           </div>
       </ul>
       <!-- menu icon -->
-      <img class="d-md-none " style="cursor: pointer; width:30px;" src="img/icon/menu.png" alt="menu">
+     <div id="menuBar" class="d-md-none">
+      <img  src="img/icon/menu.png" alt="menu" style="cursor: pointer; width:30px;">
+     </div>
   </div>
 </section>
 <!-- header end -->
@@ -153,7 +155,7 @@
 <!-- fotter section end  -->
 
 
-
+    <script src="js/main.js"></script>
     <script src="js/user.js"></script>
     <script src="js/bootstrapJs/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrapJs/bootstrap.min.js"></script>
