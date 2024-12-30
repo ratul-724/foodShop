@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/singleFood.css">
+    <link rel="stylesheet" href="css/bootstrapCss/bootstrap.min.css">
+    <title>FOOD-SHOP</title>
+</head>
+<body>
+<!-- header start -->
+    <section id="header">
+        <div class="logo"><a href="index.html">Food <span class="text-success">Shop</span></a></div>
+
+        <div id="navBar" >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foods.html">Foods</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><img src="img/cart.png" alt="AddToCart" width="30px"></a></li>
+                <li><a href="user.html"><img src="img/user.png" alt="AddToCart" width="30px"></a></li>
+            </ul>
+        </div>
+    </section>
+<!-- header end -->
+
+<!-- singleFood start here  -->
+<section id="singleFood">
+
+    <div class="singleFoodImg">
+        <img id="singleFoodImg" src="img/foodsImage/burgers.jpeg" alt="burgers">
+    </div>
+
+    <div class="singleFoodDetails">
+        <p class="fs-5 fw-bold" id="singleFoodTitle">Grilled Cheese Burgers</p>
+        <p class="fw-medium">৳170 BDT</p>
+        <input type="number" value="1">
+        <button id="addToCart" onclick="AddCart()"><img src="img/cart.png" alt="" width="20px" height="20px">  Add to Cart</button><br><br>
+        <button class="bg-danger text-light" id="order" onclick="order()"><img src="img/social/order.png" alt="" width="20px" height="20px"> Place Order</button><br><br>
+        <div class="thisFoodDetails">
+            <h6 class="fw-bold">Food Details</h6>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta maxime sequi nobis libero possimus saepe quisquam ullam vitae veniam voluptas eaque culpa ratione iure, incidunt neque adipisci molestiae ducimus odit.</p>
+        </div>
+    </div>
+
+</section>
+<!-- singleFood end here  -->
+
+<!-- news letter start  -->
+<section  id="newsLetter">
+    <div class="leftText">
+        <h2>Sign Up For Newsletters</h2>
+        <p class="text-secondary">Get E-mail updates about our latest shop and  special offers.</p>
+    </div>
+    <div class="rightInput">
+        <input class="p-2" type="email" placeholder="Your E-mail Address ">
+        <button class="p-2">Sign Up</button>
+    </div>
+</section>
+<!-- news letter end  -->
+<!-- fotter section start  -->
+<footer>
+    <div class="footerLinks">
+        <div class="footerFirstColumn">
+            <div class="logo"><a href="index.html">Food <span class="text-success">Shop</span></a></div>
+            <div class="footerFirstText">
+                <p>Contact</p><br>
+                <p>Address : Moulvibazar Polytechnic Institute, Moulvibazar</p>
+                <p>Phone : +8801308033574</p><br>
+                <h6>Follow Us</h6>
+            </div>
+            <div class="social">
+                <img src="img/social/github.png" alt="" height="25px" width="25px">
+                <img src="img/social/linkedin.png" alt="" height="25px" width="25px">
+                <img src="img/social/youtube.png" alt="" height="25px" width="25px">
+                <img src="img/social/twitter.png" alt="" height="25px" width="25px">
+            </div>
+    
+        </div>
+        <div class="footerSecondColumn">
+            <p>About</p>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footerThirdColumn">
+            <p>My Account</p>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+    <div class="footerLastText">
+        <p>© 2024. All copyright reserved | Ratul Hasan</p>
+    </div>
+</footer>
+<!-- fotter section end  -->
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrapJs/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrapJs/bootstrap.min.js"></script>
+</body>
+</html>

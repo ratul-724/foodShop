@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+#navBar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navBar ul li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 18px;   
+}
+#navBar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+#navBar li a:hover{
+    color: green;
+    /* border-bottom: 2px solid green; */
+}
+/* header section end  */
+/* singleFood Start  */
+
+#singleFood{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 100px 0px 80px;
+}
+#singleFood .singleFoodImg{
+    padding: 10px;
+    /* margin: 0 30px; */
+    background: #E3E6F3;
+    border-radius: 10px;
+
+}
+#singleFood .singleFoodImg img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.singleFoodDetails{
+    /* padding: 0 20px; */
+    width: 500px;
+}
+.singleFoodDetails input{
+    cursor: pointer;
+    width: 60px;
+}
+.singleFoodDetails button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: rgb(170, 243, 193);
+}
+.thisFoodDetails{
+    font-size: 14px;
+}
+
+/* singleFood end  */
+/* news letter start  */
+#newsLetter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    margin-top: 100px;
+    background-color: rgb(17, 17, 62);
+    color: white;
+    height: 170px;
+}
+.rightInput input{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+    width: 350px;
+}
+.rightInput button{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: none;
+    background-color: #daf5d2;
+}
+/* news letter end */
+/* fotter section start */
+footer{
+    height: 300px;
+    width: 100%;
+    background: #E3E6F3;
+}
+.footerLinks{
+    height: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 0px 100px;
+}
+.footerFirstColumn{
+    font-size: 14px;
+    
+}
+.footerFirstText{
+    line-height: 5px;
+    padding: 10px 0;
+}
+.footerSecondColumn a, .footerThirdColumn a{
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(79, 77, 77);
+}
+.footerSecondColumn p, .footerThirdColumn p{
+    font-weight: bold;
+}
+.footerLastText {
+    text-align: center;
+    font-size: 12px;
+    color: #666765;
+}
+/* fotter section end */
