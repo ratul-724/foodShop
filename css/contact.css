@@ -57,23 +57,19 @@
     transform: rotate(180deg);
     transition:  0.3s ease;
 }
-
 /* Basic styling for nav items */
 .ul {
     list-style-type: none;
     padding: 0;
     display: flex;
 }
-
 .li {
     position: relative;
 }
-
 .li > a {
     text-decoration: none;
     color: #333;
 }
-
 /* Dropdown menu styling */
 .dropdownShopName {
     display: none;
@@ -90,19 +86,16 @@
     text-align: center;
     z-index: 1;
 }
-
 .dropdownShopName li a {
     color: #333;
     padding: 10px 0px;
     display: block;
     text-decoration: none;
 }
-
 .dropdownShopName li a:hover {
     background-color: #f1f1f1;
     color: #007bff;
 }
-
 /* Show dropdown on hover */
 .li:hover .dropdownShopName {
     display: block;
@@ -111,13 +104,13 @@
 /* hero section start */
 #hero{
     position: relative;
+    z-index: -1;
 }
 #hero .heroText{
     position: absolute;
     top: 70px;
-    left: 35%;
+    width: 100%;
     text-align: center;
-    margin: auto;
     color: #daf5d2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
@@ -128,11 +121,10 @@
 }
 #hero img{
     width: 100%;
-    height: 40vh;
+    height: 200px;
     opacity: 0.9;
     position: relative;
 }
-
 /* hero section end */
 
 /* contct section start  */
@@ -143,6 +135,7 @@
     padding: 50px 100px;
     line-height: 4px;
 }
+
 .leaveMsg{
     width: 50%;
     padding: 10px 100px;
@@ -158,32 +151,37 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 80px;
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: rgb(17, 17, 62);
     color: white;
-    height: 170px;
+}
+.rightInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rightInput input{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     border: none;
-    width: 350px;
+    width: 80%;
+    padding: 10px;
 }
 .rightInput button{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     border: none;
     background-color: #daf5d2;
+    width: 120px;
+    padding: 10px;
 }
 /* news letter end */
 /* fotter section start */
 footer{
-    height: 300px;
     width: 100%;
     background: #E3E6F3;
 }
 .footerLinks{
-    height: 270px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -191,7 +189,6 @@ footer{
 }
 .footerFirstColumn{
     font-size: 14px;
-    
 }
 .footerFirstText{
     line-height: 5px;
@@ -203,6 +200,10 @@ footer{
     text-decoration: none;
     color: rgb(79, 77, 77);
 }
+.footerSecondColumn a:hover , .footerThirdColumn a:hover{
+    text-decoration: underline;
+    color: rgb(79, 77, 77);
+}
 .footerSecondColumn p, .footerThirdColumn p{
     font-weight: bold;
 }
@@ -211,66 +212,41 @@ footer{
     font-size: 12px;
     color: #666765;
 }
+.footerThirdColumn{
+    padding: 0 50px 0 80px;
+}
+.footerLastColumn{
+    display: flex;
+}
 /* fotter section end */
 
-/* cart section start from here  */
-#cart{
-    padding: 10px 30px;
-}
-#cart table{
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
-    
-}
-#cart table td:nth-child(1){
-    text-align: center;
-    width: 100px;
-}
-#cart table td:nth-child(2){
-    text-align: center;
-    width: 150px;
-}
-#cart table td:nth-child(3){
-    text-align: center;
-    width: 250px;
-}
-#cart table td:nth-child(4){
-    text-align: center;
-    width: 200px;
-}
-#cart table td:nth-child(5){
-    text-align: center;
-    width: 200px;
-}
-#cart table tbody td:nth-child(5) input{
-    width: 70px;
-    padding: 5px 15px 5px 10px;
-}
-#cart table td:nth-child(6){
-    width: 150px;
-    text-align: center;
-}
-#cart table thead{
-    border: 1px solid black;
-    border-left: none;
-    border-right: none;
-    font-weight: bold;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 15px 0;
-}
-#cart table thead td{
-    font-weight: bold;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 12px 0;
-}
-#cart table tbody td{
-    padding-top: 1dvi;
-}
-.cartFoodImg{
-    height: 70px;
-    width: 65px;
+@media screen and (max-width: 768px) {
+    .infoAndMap{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        line-height: 4px;
+    }
+
+    .infoAndMap .info h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .infoAndMap .map{
+        width: 100%;
+        height: 200px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .leaveMsg{
+        width: 100%;
+        padding: 10px 7%;
+    }
+    .leaveMsg form{
+        padding-top: 30px;
+    }
 }

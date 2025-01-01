@@ -118,10 +118,23 @@
     height: 90vh;
     background: #E3E6F3;
 }
-#hero .shopBtn{
+#hero .btns button{
     padding: 8px 25px;
     border: 1px solid green;
     border-radius: 50px;
+    transition: all ease 0.3s;
+}
+#hero .btns .cartBtn{
+    background-color: green;
+    color: white;
+}
+#hero .btns .cartBtn:hover{
+    background-color: #E3E6F3;
+    color: rgb(0, 0, 0);
+}
+#hero .btns .orderBtn:hover{
+    background-color: green;
+    color: white;
 }
 /* hero section end */
 /* food item section start  */
@@ -177,24 +190,24 @@
 .headingFoods{
     text-align: center;
     margin-top: 100px;
+    padding: 0 20px;
 }
 .foods{
-    width: 250px;
+    width: 100%;
     /* border: 1px solid black; */
     border-radius: 10px;
     background-color: #e4e7f5;
-    padding: 8px;
     cursor: pointer;
+    padding: 7px;
 }
 .foods .foodItemImg{
     width: 100%;
     border-radius: 10px;
 }
-
 .foodsContainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 60px;
+    gap: 20px;
     padding: 0 80px;
 }
 .buyFood{
@@ -219,32 +232,37 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 80px;
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: rgb(17, 17, 62);
     color: white;
-    height: 170px;
+}
+.rightInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rightInput input{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     border: none;
-    width: 350px;
+    width: 80%;
+    padding: 10px;
 }
 .rightInput button{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     border: none;
     background-color: #daf5d2;
+    width: 120px;
+    padding: 10px;
 }
 /* news letter end */
 /* fotter section start */
 footer{
-    height: 300px;
     width: 100%;
     background: #E3E6F3;
 }
 .footerLinks{
-    height: 270px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -264,6 +282,10 @@ footer{
     text-decoration: none;
     color: rgb(79, 77, 77);
 }
+.footerSecondColumn a:hover , .footerThirdColumn a:hover{
+    text-decoration: underline;
+    color: rgb(79, 77, 77);
+}
 .footerSecondColumn p, .footerThirdColumn p{
     font-weight: bold;
 }
@@ -272,20 +294,27 @@ footer{
     font-size: 12px;
     color: #666765;
 }
+.footerThirdColumn{
+    padding: 0 50px 0 80px;
+}
+.footerLastColumn{
+    display: flex;
+}
 /* fotter section end */
 
 /* user page css start here  */
 #loginAndRegister{
     width: 100%;
     display: flex;
-    padding: 50px 0;
+    padding: 50px 20px;
     justify-content: center;
+    
 }
 #loginAndRegister form{
     background-color: #d5f3b8;
     padding: 30px;
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
 }
 #loginAndRegister .signInBtn{
     width: 100%;
@@ -312,41 +341,31 @@ footer{
         margin-top: 70px;
     }
     #foodItems {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 7%;
+    }
+    #foodItems .item img{
+        width: 70px;
+        height: 80px;
     }
     .item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    .foodsContainer {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
-    #newsLetter {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .rightInput input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .rightInput button {
         width: 100%;
     }
-    .footerLinks {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+    .foodsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 4%;
     }
-    .footerFirstColumn, .footerSecondColumn, .footerThirdColumn {
-        margin-bottom: 20px;
+    .foods{
+        width: 100%;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        background-color: #e4e7f5;
+        padding: 8px;
+        cursor: pointer;
     }
-    #loginAndRegister {
-        padding: 20px 0;
-    }
-    #loginAndRegister form {
-        width: 90%;
-    }
+   
 }

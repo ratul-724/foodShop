@@ -1,25 +1,77 @@
 @media screen and (max-width: 768px) {
-        #header {
-            padding: 10px 20px;
-            /* display: block; */
-        }
-        .logo{
-            font-size: 20px;
-        }
-        #navBar .ul {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            top: 100%;
-            right: 2%;
-            width: 180px;
-            background: #bfc2cb;
-            border-radius: 5px;
-        }
-        #navBar .ul .li {
-            padding: 10px 20px;
-            margin-top: 10px;
-            width: 100%;
-        }
+    #header {
+        padding: 10px 20px;
+        /* display: block; */
     }
+    .logo{
+        font-size: 20px;
+    }
+    #navBar .ul {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 180px;
+        background: #bfc2cb;
+        border-radius: 5px;
+    }
+    #navBar .ul .li {
+        padding: 10px 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+/* code for news letter section */
+    #newsLetter{
+        display: block;
+        padding: 0 5%;
+        /* height: 200px; */
+    }
+    .rightInput{
+        padding-bottom: 30px;
+    }
+    .rightInput input{
+        width: 70%;
+
+    }
+    #newsLetter .leftText{
+        text-align: center;
+        padding-top: 20px;
+    }
+    #newsLetter .leftText h2{
+        font-size: 20px;
+        font-weight: semi-bold;
+    }
+/* code for news letter section */
+
+/* code for footer section */
+    .footerLinks{
+        width: 100%;
+        display: block;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .footerFirstColumn{
+        line-height: 4;
+    }
+    .social{
+        margin-top: -15px;
+    }
+    .footerSecondColumn a, .footerThirdColumn a{
+        display: block;
+    }
+    .footerSecondColumn p, .footerThirdColumn p{
+        font-weight: bold;
+        font-size: 15px !important;
+    }
+    .footerThirdColumn{
+        padding: 0 30px 0 30px;
+    }
+    .footerLastColumn{
+        display: flex;
+    }
+/* code for footer section */
+}
