@@ -10,7 +10,6 @@
         display: none;
         flex-direction: column;
         justify-content: start;
-        margin: 0;
         position: absolute;
         top: 100%;
         right: 20%;
@@ -20,7 +19,7 @@
     }
     #navBar .ul .li {
         padding: 10px 10px;
-        margin-top: 10px;
+        margin: 0px;
         width: 100%;
     }
 
