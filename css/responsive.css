@@ -9,7 +9,7 @@
     #navBar .ul {
         display: none;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 7%;
         position: absolute;
         top: 100%;
         right: 2%;
@@ -18,7 +18,7 @@
         border-radius: 5px;
     }
     #navBar .ul .li {
-        padding: 10px 20px;
+        padding: 10px 0px;
         margin-top: 10px;
         width: 100%;
     }
