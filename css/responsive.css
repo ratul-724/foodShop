@@ -9,7 +9,7 @@
     #navBar .ul {
         display: none;
         flex-direction: column;
-        justify-content: center;
+     /*   justify-content: center;*/
         position: absolute;
         top: 100%;
         right: 2%;
