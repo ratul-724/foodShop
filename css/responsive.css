@@ -9,10 +9,10 @@
     #navBar .ul {
         display: none;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         position: absolute;
         top: 100%;
-        right: 0%;
+        right: 2%;
         width: 180px;
         background: #bfc2cb;
         border-radius: 5px;
