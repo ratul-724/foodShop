@@ -26,19 +26,3 @@ for (let i = 0; i < foods.length; i++) {
 }
 // code for clicking on food item and going to single food page
 
-// for cart 
-document.getElementById("foodQuantity").addEventListener("input", function() {
-    const quantity = document.getElementById("foodQuantity").value;
-    document.getElementById("singleFoodPrice").textContent = "৳" + (170 * quantity) + " BDT";
-});
-// for cart 
-
-// single food 
-function order(){
-    alert("We Recived Your Order.");
-    document.getElementById("order").innerHTML = '<img src="img/icon/clock.png" alt="" width="20px" height="20px"> Ordered';
-};
-function AddCart(){
-    document.getElementById("addToCart").innerHTML = '<img src="img/icon/order.png" alt="" width="20px" height="20px"> Added to Cart';
-};
-// single food 

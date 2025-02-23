@@ -23,3 +23,25 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("singleFoodTitle").innerText = productData.details;
     }
 });
+
+// go to cart
+function AddCart() {
+    document.getElementById("addToCart").innerHTML = '<img src="img/icon/order.png" alt="" width="20px" height="20px"> Added to Cart';
+
+    const product = {
+        image: document.getElementById('singleFoodImg').src,
+        title: document.getElementById('singleFoodTitle').textContent,
+        price: parseFloat(document.getElementById('singleFoodPrice').textContent),
+        quantity: parseFloat(document.querySelector('#singleFood input[type="number"]').value)
+    };
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert('Product added to cart!');
+}
+function order(){
+    alert("We Recived Your Order.");
+    document.getElementById("order").innerHTML = '<img src="img/icon/clock.png" alt="" width="20px" height="20px"> Ordered';
+};
+// single food 
