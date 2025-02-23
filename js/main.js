@@ -36,9 +36,9 @@ document.getElementById("foodQuantity").addEventListener("input", function() {
 // single food 
 function order(){
     alert("We Recived Your Order.");
-    document.getElementById("order").innerHTML = '<img src="img/social/order.png" alt="" width="20px" height="20px"> Ordered';
+    document.getElementById("order").innerHTML = '<img src="img/icon/clock.png" alt="" width="20px" height="20px"> Ordered';
 };
 function AddCart(){
-    document.getElementById("addToCart").innerHTML = '<img src="img/cart.png" alt="" width="20px" height="20px"> Added to Cart';
+    document.getElementById("addToCart").innerHTML = '<img src="img/icon/order.png" alt="" width="20px" height="20px"> Added to Cart';
 };
 // single food 
